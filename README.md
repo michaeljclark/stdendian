@@ -34,8 +34,9 @@ swap intrinsics.
 ### Simplified host endian interfaces
 
 Simplified endian sensitive interfaces designed to remove duplication.
-These interfaces requires wrapping loads or stores with indication of the representation. This style has been adopted by cryptographers because it
-makes code and algorithms easier to read and understand.
+These interfaces require wrapping loads or stores with indication of
+the representation. This style has been adopted by cryptographers
+because it makes code and algorithms easier to read and understand.
 
 #### big-endian
 
@@ -51,10 +52,10 @@ makes code and algorithms easier to read and understand.
 
 ### BSD host endian interfaces
 
-Traditional BSD interface with duplication. This is the traditional
-interface that has redundant directioality. It makes it more complex
-to read and understand code versus simply indicating representation.
-These interfaces are retained for compatibility.
+Traditional BSD interface with duplication. These are traditional
+interfaces that have redundant directionality. The redundancy can make
+it more complex to read and understand code versus simply indicating
+representation. These interfaces are retained for compatibility.
 
 #### 16-bit word
 
