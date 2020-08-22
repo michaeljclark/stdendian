@@ -50,7 +50,7 @@ because it makes code and algorithms easier to read and understand.
 - `uint32_t le32(uint32_t x);`
 - `uint64_t le64(uint32_t x);`
 
-### BSD host endian interfaces
+### Traditional host endian interfaces
 
 Traditional BSD interface with duplication. These are traditional
 interfaces that have redundant directionality. The redundancy can make
