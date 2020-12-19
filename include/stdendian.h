@@ -156,6 +156,10 @@ static inline uint64_t bswap64(uint64_t x) { return _byteswap_uint64(x); }
  * define host integer swaps using explicit byte swapping.
  */
 
+/* helps to have these function for symmetry */
+static inline uint8_t le8(uint8_t x) { return x; }
+static inline uint8_t be8(uint8_t x) { return x; }
+
 #if defined(__BSWAP_DEFINED)
 #if _BYTE_ORDER == _BIG_ENDIAN
 static inline uint16_t be16(uint16_t x) { return x; }

@@ -38,14 +38,20 @@ These interfaces require wrapping loads or stores with indication of
 the representation. This style has been adopted by cryptographers
 because it makes code and algorithms easier to read and understand.
 
+The simplified interface provides functions for a single byte, which
+are a functional no-op. They are provided for symmetry, as these
+functions are often passed as template arguments for IO helpers.
+
 #### big-endian
 
+- `uint8_t be8(uint8_t x);`
 - `uint16_t be16(uint16_t x);`
 - `uint32_t be32(uint32_t x);`
 - `uint64_t be64(uint32_t x);`
 
 #### litte-endian
 
+- `uint8_t le8(uint8_t x);`
 - `uint16_t le16(uint16_t x);`
 - `uint32_t le32(uint32_t x);`
 - `uint64_t le64(uint32_t x);`
