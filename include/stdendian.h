@@ -88,10 +88,15 @@ extern "C" {
 /* Apple */
 #if defined(__APPLE__)
 #include <machine/endian.h>
+#include <libkern/OSByteOrder.h>
+#define __ENDIAN_DEFINED
+#define __BSWAP_DEFINED
 #define _BYTE_ORDER             BYTE_ORDER
 #define _LITTLE_ENDIAN          LITTLE_ENDIAN
 #define _BIG_ENDIAN             BIG_ENDIAN
-#define __ENDIAN_DEFINED
+#define bswap16(x) OSSwapInt16(x)
+#define bswap32(x) OSSwapInt32(x)
+#define bswap64(x) OSSwapInt64(x)
 #endif /* Apple */
 
 /* Windows */
