@@ -79,7 +79,7 @@ representation. These interfaces are retained for compatibility.
 
 #### 64-bit word
 
-- `uint64_t htobe64(uint32_t x) { return be64(x); }`
-- `uint64_t htole64(uint32_t x) { return le64(x); }`
-- `uint64_t be64toh(uint32_t x) { return be64(x); }`
-- `uint64_t le64toh(uint32_t x) { return le64(x); }`
+- `uint64_t htobe64(uint64_t x) { return be64(x); }`
+- `uint64_t htole64(uint64_t x) { return le64(x); }`
+- `uint64_t be64toh(uint64_t x) { return be64(x); }`
+- `uint64_t le64toh(uint64_t x) { return le64(x); }`
